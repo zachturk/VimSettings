@@ -540,7 +540,14 @@
     if has('gui_running')
         set guioptions-=T           " remove the toolbar
         set lines=40                " 40 lines of text instead of 24,
-        set guifont=Andale\ Mono\ Regular:h16,Menlo\ Regular:h15,Consolas\ Regular:h16,Courier\ New\ Regular:h18
+        "if has("gui_gtk2")
+                "set guifont=DejaVu\ Sans\ Mono\ 11
+        "elseif has("gui_macvim")
+            "set guifont=Consolas:h12
+        "elseif has("gui_win32")
+            "set guifont=Consolas:h11
+        "end
+        "set guifont=Sans\ Regular:h16, Menlo\ Regular:h15,Consolas\ Regular:h16,Courier\ New\ Regular:h18
         if has('gui_macvim')
             set transparency=5          " Make the window slightly transparent
         endif
