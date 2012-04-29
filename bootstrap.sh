@@ -1,6 +1,6 @@
 #!/bin/env sh
 
-endpath="$HOME/.spf13-vim-3"
+endpath="$HOME/.VimSettings"
 
 warn() {
     echo "$1" >&2
